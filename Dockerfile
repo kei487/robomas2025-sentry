@@ -48,18 +48,19 @@ RUN echo $TZ > /etc/timezone && \
 USER $USERNAME
 WORKDIR /home/$USERNAME
 
-COPY setup_scripts /home/$USERNAME/
+COPY setup_scripts/nav2_install.sh /home/$USERNAME/
+COPY setup_scripts/setup.sh /home/$USERNAME/
 #COPY install_packages.bash /home/$USERNAME/
 #COPY nav2_install.sh /home/$USERNAME/
-RUN . /home/$USERNAME/setup_scripts/setup.sh
+RUN . /home/$USERNAME/setup.sh
 #RUN . /home/$USERNAME/nav2_install.sh
 
-FROM ros:humble-ros-core
+#FROM ros:humble-ros-core
 
-RUN apt update \
-    && DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends --no-install-suggests \
-  ros-dev-tools \
-  wget
+#RUN apt update \
+#    && DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends --no-install-suggests \
+#  ros-dev-tools \
+#  wget
 
 #RUN rosdep init \
 #     && apt update && apt upgrade -y \
