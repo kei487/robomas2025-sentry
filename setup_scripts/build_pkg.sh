@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 ./nav2_install.bash
+./cartographer_install.sh
 
 # nav2_ws
 cd ~/nav2_ws

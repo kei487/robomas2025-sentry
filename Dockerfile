@@ -49,7 +49,7 @@ USER $USERNAME
 WORKDIR /home/$USERNAME
 
 COPY setup_scripts/nav2_install.sh /home/$USERNAME/
-COPY setup_scripts/cartorapher_install.sh /home/$USERNAME/
+COPY setup_scripts/cartographer_install.sh /home/$USERNAME/
 COPY setup_scripts/build_pkg.sh /home/$USERNAME/
 COPY setup_scripts/setup.sh /home/$USERNAME/
 #COPY install_packages.bash /home/$USERNAME/
