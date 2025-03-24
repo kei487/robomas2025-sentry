@@ -11,7 +11,7 @@ cd $current_dir/ros2_ws/src
 #git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/raspicat_sim.git
 #git clone -b master git@github.com:CIT-Autonomous-Robot-Lab/raspimouse2.git
 #git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/wall_tracking.git
-git clone -b mugimaru-2024 https://github.com/CIT-Autonomous-Robot-Lab/pointcloud_to_laserscan.git
+git clone -b mid360 https://github.com/kei487/pointcloud_to_laserscan.git
 git clone https://github.com/kei487/turtlebot3.git
 cd $current_dir
 
