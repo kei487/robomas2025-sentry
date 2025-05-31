@@ -12,7 +12,11 @@ cd $current_dir/ros2_ws/src
 #git clone -b master git@github.com:CIT-Autonomous-Robot-Lab/raspimouse2.git
 #git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/wall_tracking.git
 git clone -b mid360 https://github.com/kei487/pointcloud_to_laserscan.git
-git clone https://github.com/kei487/turtlebot3.git
+#git clone https://github.com/kei487/turtlebot3.git
+git clone https://github.com/kei487/lidar_localization_ros2.git
+git clone https://github.com/rsasaki0109/ndt_omp_ros2.git
+git clone https://github.com/kei487/convert_pose2tf.git
+git clone https://github.com/kei487/sentry_master.git
 cd $current_dir
 
 mkdir -p $current_dir/ws_livox/src

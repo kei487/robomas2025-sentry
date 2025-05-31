@@ -1,13 +1,13 @@
 #!/usr/bin/bash
 
-./nav2_install.bash
-./cartographer_install.sh
+#./nav2_install.bash
+#./cartographer_install.sh
 
 # nav2_ws
 cd ~/nav2_ws
 rosdep update
 rosdep install -y --from-paths src/* --ignore-src --rosdistro $ROS_DISTRO 
-colcon build --symlink-install --packages-select nav2_msgs nav2_rviz_plugins nav2_waypoint_follower
+colcon build --symlink-install #--packages-select nav2_msgs nav2_rviz_plugins nav2_waypoint_follower
 
 # ros2_ws
 cd ~/ros2_ws 
